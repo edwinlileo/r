@@ -20,3 +20,6 @@ RUN adduser -D user
 RUN chown -R user:user /vol/
 RUN chmod -R 755 /vol/web
 USER user
+
+EXPOSE 8080
+CMD [ "npm", "start" ]
